@@ -35,18 +35,3 @@ src/
 ```
 
 ---
-
-### 💾 How to update it on GitHub in 3 quick terminal lines:
-Once you save the file updates inside VS Code, open your terminal screen panel (`Ctrl + ~`) and enter these final commands to update the code online:
-
-```bash
-git add README.md
-git commit -m "docs: upgrade README with comprehensive SaaS feature matrix metrics"
-git push
-```
-
-<FollowUp>
-Once you press enter on that terminal push line and refresh the page, the presentation layout will update beautifully. 
-
-Would you like me to guide you through **deploying this app completely free on Vercel** now so you have a working live website link to display next to this documentation?
-</FollowUp>
