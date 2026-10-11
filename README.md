@@ -1,16 +1,52 @@
-# React + Vite
+# MediFind Suite — Dynamic Micro-Regional Diagnostics Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A high-performance, modular React diagnostics hub dashboard built to index, filter, and compare 111+ distributed medical facilities and dynamic procedure rates in real time.
 
-Currently, two official plugins are available:
+## 🚀 Live Features Architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Geospatial Lookup Pipeline:** Live-filtering of 111 nationwide clinical nodes spread across 5 NCR healthcare hubs (Noida, Delhi, Gurgaon, Ghaziabad, Faridabad) with strict radius constraints.
+*   **Real-time Computational Analytics:** An inline telemetry stream layer that dynamically parses visible facility datasets to calculate lowest procedure costs, average proximity metrics, and top-rated medical entities on the fly.
+*   **Side-by-Side Comparison Matrix:** A dedicated state-persistent comparison dock that contrasts complex metrics (Accreditations, Distance, Ratings, and multi-procedure prices) side-by-side.
+*   **Client-Side Text Report Exporter:** Engineered a raw text stream writer that programmatically compiles state layout snapshots into a clean, downloadable `.txt` report payload on a single click.
+*   **Persistent Cache & Themes Switcher:** Features `localStorage` state hydration to preserve user comparison arrays across browser reloads, combined with a synchronized Dark Mode theme switcher.
 
-## React Compiler
+## 🛠️ Technical Stack & Tooling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Frontend Framework:** React 18 (Vite Bundler Architecture)
+*   **Styling Engine:** Tailwind CSS 3.x (Fully adapted dark/light variant variables)
+*   **Vector Layouts:** Lucide React (High-contrast state indicators)
+*   **State Coordination:** Hook-driven state pipelines and synchronous browser local cache handlers
 
-## Expanding the Oxlint configuration
+## 📂 Modular File Architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```text
+src/
+├── components/
+│   ├── AuthModal.jsx          # Secure patient registration / login overlay frame
+│   ├── BookingModal.jsx       # Secure validation frame user forms overlay
+│   ├── CompareMatrix.jsx      # Multi-column alignment grid table with integrated text exporter
+│   ├── FilterPanel.jsx        # Parameter controls panel inputs strip
+│   ├── Header.jsx             # Top bar logo navigation & responsive actions cluster
+│   ├── HospitalCard.jsx       # Dual-column horizontal facility listing template 
+│   └── ThemeToggle.jsx        # Synchronized client dark profile switcher hook
+├── data/
+│   └── hospitalData.js        # Locked 111-entry static dataset infrastructure
+└── App.jsx                    # Primary unified root data workflow orchestrator
+```
+
+---
+
+### 💾 How to update it on GitHub in 3 quick terminal lines:
+Once you save the file updates inside VS Code, open your terminal screen panel (`Ctrl + ~`) and enter these final commands to update the code online:
+
+```bash
+git add README.md
+git commit -m "docs: upgrade README with comprehensive SaaS feature matrix metrics"
+git push
+```
+
+<FollowUp>
+Once you press enter on that terminal push line and refresh the page, the presentation layout will update beautifully. 
+
+Would you like me to guide you through **deploying this app completely free on Vercel** now so you have a working live website link to display next to this documentation?
+</FollowUp>
